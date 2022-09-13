@@ -1,0 +1,574 @@
+{
+	"info": {
+		"_postman_id": "9406631c-06f4-4c33-9197-657cc87f2ff9",
+		"name": "TaskRentABook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"book"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book",
+							"protocol": "https",
+							"host": [
+								"virtserver",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"book"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 07:54:30 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "153"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,Content-Type,Accept,Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.4.29.v20200521)"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"created_at\": \"2019-02-18T00:00:00\",\n        \"updated_at\": \"2019-02-18T00:00:00\",\n        \"deleted_at\": \"2019-02-18T00:00:00\",\n        \"id\": 1234,\n        \"title\": \"Judul Buku Satu\",\n        \"isbn\": \"1-234-5678-9101112-13\",\n        \"writer\": \"Dr. Who\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1234",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1234",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"book",
+						"1234"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1234",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1234",
+							"protocol": "https",
+							"host": [
+								"virtserver",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"book",
+								"1234"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 08:36:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "149"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,Content-Type,Accept,Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.4.29.v20200521)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"created_at\": \"2019-02-18T00:00:00\",\n    \"updated_at\": \"2019-02-18T00:00:00\",\n    \"deleted_at\": \"2019-02-18T00:00:00\",\n    \"id\": 1234,\n    \"title\": \"Judul Buku Satu\",\n    \"isbn\": \"1-234-5678-9101112-13\",\n    \"writer\": \"Dr. Who\"\n}"
+				}
+			]
+		},
+		{
+			"name": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Negeri 5 Menara",
+							"type": "text"
+						},
+						{
+							"key": "isbn",
+							"value": "1-234-5678-9101112-14",
+							"type": "text"
+						},
+						{
+							"key": "writer",
+							"value": "A. Fuadi",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"book"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Negeri 5 Menara",
+									"type": "text"
+								},
+								{
+									"key": "isbn",
+									"value": "1-234-5678-9101112-14",
+									"type": "text"
+								},
+								{
+									"key": "writer",
+									"value": "A. Fuadi",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book",
+							"protocol": "https",
+							"host": [
+								"virtserver",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"book"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 08:36:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "130"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,Content-Type,Accept,Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.4.29.v20200521)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"created_at\": \"2019-02-18T00:00:00\",\n    \"updated_at\": \"2019-02-18T00:00:00\",\n    \"deleted_at\": \"2019-02-18T00:00:00\",\n    \"client_id\": 1234,\n    \"client_key\": \"CLIENT01\",\n    \"client_secret\": \"SECRET01\",\n    \"status\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1234",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Judul Buku Lima",
+							"type": "text"
+						},
+						{
+							"key": "isbn",
+							"value": "1-234-5678-9101112-14",
+							"type": "text"
+						},
+						{
+							"key": "Writer",
+							"value": "Dr. X",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1234",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"book",
+						"1234"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1234",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Judul Buku Lima",
+									"type": "text"
+								},
+								{
+									"key": "isbn",
+									"value": "1-234-5678-9101112-14",
+									"type": "text"
+								},
+								{
+									"key": "Writer",
+									"value": "Dr. X",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1234",
+							"protocol": "https",
+							"host": [
+								"virtserver",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"book",
+								"1234"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 08:37:03 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "149"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,Content-Type,Accept,Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.4.29.v20200521)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"created_at\": \"2019-02-18T00:00:00\",\n    \"updated_at\": \"2019-02-18T00:00:00\",\n    \"deleted_at\": \"2019-02-18T00:00:00\",\n    \"id\": 1234,\n    \"title\": \"Judul Buku Satu\",\n    \"isbn\": \"1-234-5678-9101112-13\",\n    \"writer\": \"Dr. Who\"\n}"
+				}
+			]
+		},
+		{
+			"name": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1234",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1234",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"book",
+						"1234"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1234",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1234",
+							"protocol": "https",
+							"host": [
+								"virtserver",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"book",
+								"1234"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 08:37:13 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "47"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,Content-Type,Accept,Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.4.29.v20200521)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"deleted\"\n}"
+				}
+			]
+		}
+	]
+}
