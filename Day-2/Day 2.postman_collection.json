@@ -1,0 +1,791 @@
+{
+	"info": {
+		"_postman_id": "3678c7e8-3229-468c-893c-5015b0b42f94",
+		"name": "Day 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "v1/books",
+			"item": [
+				{
+					"name": "{book id}",
+					"item": [
+						{
+							"name": "v1GetBookById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/v1/books/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"books",
+										"2"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "v1GetBookById",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/v1/books/2",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"v1",
+												"books",
+												"2"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 15 Sep 2022 10:45:54 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "122"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"status\": \"Get Book by Id Succesfully!\",\n    \"data\": {\n        \"id\": 2,\n        \"title\": \"Hujan\",\n        \"author\": \"Tere Liye\",\n        \"total_page\": 320\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "v1UpdateBookById",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "4",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "Guru Aini",
+											"type": "text"
+										},
+										{
+											"key": "author",
+											"value": "Andrea Hirata",
+											"type": "text"
+										},
+										{
+											"key": "total_page",
+											"value": "600",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/books/4",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"books",
+										"4"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "v1UpdateBookById",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "id",
+													"value": "4",
+													"type": "text"
+												},
+												{
+													"key": "title",
+													"value": "Guru Aini",
+													"type": "text"
+												},
+												{
+													"key": "author",
+													"value": "Andrea Hirata",
+													"type": "text"
+												},
+												{
+													"key": "total_page",
+													"value": "600",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{base_url}}/v1/books/4",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"v1",
+												"books",
+												"4"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 15 Sep 2022 10:54:15 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "129"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"status\": \"Book Updated Successfully!\",\n    \"data\": {\n        \"id\": 4,\n        \"title\": \"Guru Aini\",\n        \"author\": \"Andrea Hirata\",\n        \"total_page\": 600\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "v1DeleteBookById",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/v1/books/3",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"books",
+										"3"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "v1DeleteBookById",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/v1/books/3",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"v1",
+												"books",
+												"3"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 15 Sep 2022 10:54:44 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "104"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"status\": \"Book Deleted Successfully\",\n    \"data\": {\n        \"id\": 0,\n        \"title\": \"\",\n        \"author\": \"\",\n        \"total_page\": 0\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "v1GetBooks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/v1/books",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "v1GetBooks",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/v1/books",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Sep 2022 10:45:19 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "337"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"status\": \"Get All Books Successfully!\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"title\": \"Rindu\",\n            \"author\": \"Tere Liye\",\n            \"total_page\": 523\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Hujan\",\n            \"author\": \"Tere Liye\",\n            \"total_page\": 320\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Orang-orang Biasa\",\n            \"author\": \"Andrea Hirata\",\n            \"total_page\": 262\n        },\n        {\n            \"id\": 4,\n            \"title\": \"Guru Aini\",\n            \"author\": \"Andrea Hirata\",\n            \"total_page\": 300\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "v1CreateBook",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Guru Aini",
+									"type": "text"
+								},
+								{
+									"key": "author",
+									"value": "Andrea Hirata",
+									"type": "text"
+								},
+								{
+									"key": "total_page",
+									"value": "300",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/books",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "v1CreateBook",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "4",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "Guru Aini",
+											"type": "text"
+										},
+										{
+											"key": "author",
+											"value": "Andrea Hirata",
+											"type": "text"
+										},
+										{
+											"key": "total_page",
+											"value": "300",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/books",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"books"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Sep 2022 10:44:43 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "130"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 201,\n    \"status\": \"New Book Added Succesfully!\",\n    \"data\": {\n        \"id\": 4,\n        \"title\": \"Guru Aini\",\n        \"author\": \"Andrea Hirata\",\n        \"total_page\": 300\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "v1/users",
+			"item": [
+				{
+					"name": "{user id}",
+					"item": [
+						{
+							"name": "v1GetUserById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/v1/users/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "a"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "v1GetUserById",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/v1/users/2",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"v1",
+												"users",
+												"2"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 15 Sep 2022 15:45:25 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "226"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"status\": \"Success Get User By Id\",\n    \"data\": {\n        \"ID\": 2,\n        \"CreatedAt\": \"2022-09-15T22:44:48.613+07:00\",\n        \"UpdatedAt\": \"2022-09-15T22:44:48.613+07:00\",\n        \"DeletedAt\": null,\n        \"name\": \"Puspa\",\n        \"email\": \"puspa@mail.com\",\n        \"password\": \"1234\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "v1UpdateUserById",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ID\" : 2,\r\n    \"name\" : \"Puspita\",\r\n    \"email\" : \"puspita@mail.com\",\r\n    \"password\": \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/users/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"users",
+										"2"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "v1UpdateUserById",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"ID\" : 2,\r\n    \"name\" : \"Puspita\",\r\n    \"email\" : \"puspita@mail.com\",\r\n    \"password\": \"1234\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/v1/users/2",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"v1",
+												"users",
+												"2"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 15 Sep 2022 15:47:23 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "225"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"status\": \"User Updated Successfully!\",\n    \"data\": {\n        \"ID\": 2,\n        \"CreatedAt\": \"0001-01-01T00:00:00Z\",\n        \"UpdatedAt\": \"2022-09-15T22:47:23.212+07:00\",\n        \"DeletedAt\": null,\n        \"name\": \"Puspita\",\n        \"email\": \"puspita@mail.com\",\n        \"password\": \"1234\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "v1DeleteUserById",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/v1/users/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "v1DeleteUserById",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/v1/users/2",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"v1",
+												"users",
+												"2"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 15 Sep 2022 15:47:53 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "189"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"status\": \"User Deleted Successfully!\",\n    \"data\": {\n        \"ID\": 0,\n        \"CreatedAt\": \"0001-01-01T00:00:00Z\",\n        \"UpdatedAt\": \"0001-01-01T00:00:00Z\",\n        \"DeletedAt\": null,\n        \"name\": \"\",\n        \"email\": \"\",\n        \"password\": \"\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "v1GetUsers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "tono@example.com",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/users",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "v1GetUsers",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "tono@example.com",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/users",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Sep 2022 15:45:02 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "393"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"status\": \"Success Get Users\",\n    \"data\": [\n        {\n            \"ID\": 1,\n            \"CreatedAt\": \"2022-09-15T22:44:02.821+07:00\",\n            \"UpdatedAt\": \"2022-09-15T22:44:02.821+07:00\",\n            \"DeletedAt\": null,\n            \"name\": \"Budi\",\n            \"email\": \"budi@mail.com\",\n            \"password\": \"1234\"\n        },\n        {\n            \"ID\": 2,\n            \"CreatedAt\": \"2022-09-15T22:44:48.613+07:00\",\n            \"UpdatedAt\": \"2022-09-15T22:44:48.613+07:00\",\n            \"DeletedAt\": null,\n            \"name\": \"Puspa\",\n            \"email\": \"puspa@mail.com\",\n            \"password\": \"1234\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "v1CreateUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/users",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "v1CreateUser",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\" : \"Puspa\",\r\n    \"email\" : \"puspa@mail.com\",\r\n    \"password\": \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/users",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Sep 2022 15:44:48 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "232"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"status\": \"New User Added Successfully!\",\n    \"data\": {\n        \"ID\": 2,\n        \"CreatedAt\": \"2022-09-15T22:44:48.613+07:00\",\n        \"UpdatedAt\": \"2022-09-15T22:44:48.613+07:00\",\n        \"DeletedAt\": null,\n        \"name\": \"Puspa\",\n        \"email\": \"puspa@mail.com\",\n        \"password\": \"1234\"\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
