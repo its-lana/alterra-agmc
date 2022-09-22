@@ -24,36 +24,36 @@
 ### Student API
 
 -  Signup <br>
-   ![Register](/day8/signup.png) <br>
+   ![Register](/Day-8/signup.png) <br>
 -  Login <br>
-   ![Login](/day8/login.png)<br>
+   ![Login](/Day-8/login.png)<br>
 -  Get All Students <br>
-   ![Get All Students](/day8/1-get-students.png)<br>
+   ![Get All Students](/Day-8/1-get-students.png)<br>
 -  Get Student by ID <br>
-   ![Get Student by ID](/day8/1-getStudentById.png)<br>
+   ![Get Student by ID](/Day-8/1-getStudentById.png)<br>
 -  Update Data Student <br>
-   ![Update Data Student](/day8/1-updateStudent.png) <br>
+   ![Update Data Student](/Day-8/1-updateStudent.png) <br>
 
 ### Major API
 
 -  Get All Majors <br>
-   ![Get All Majors](/day8/2-getMajors.png) <br>
+   ![Get All Majors](/Day-8/2-getMajors.png) <br>
 -  Get Major By ID <br>
-   ![Get Major By ID](/day8/2-getMajorById.png) <br>
+   ![Get Major By ID](/Day-8/2-getMajorById.png) <br>
 -  Add New Major <br>
-   ![Add New Major](/day8/2-addNewMajor.png) <br>
+   ![Add New Major](/Day-8/2-addNewMajor.png) <br>
 -  Delete Major <br>
-   ![Delete Major](/day8/2-deleteMajor.png) <br>
+   ![Delete Major](/Day-8/2-deleteMajor.png) <br>
 
 ### Class API
 
 -  Get All Classes <br>
-   ![Get All Classes](/day8/3-getClasses.png) <br>
+   ![Get All Classes](/Day-8/3-getClasses.png) <br>
 -  Get Class By ID <br>
-   ![Get Class By ID](/day8/3-getClassById.png) <br>
+   ![Get Class By ID](/Day-8/3-getClassById.png) <br>
 -  Add New Class <br>
-   ![Add New Class](/day8/3-addNewClass.png) <br>
+   ![Add New Class](/Day-8/3-addNewClass.png) <br>
 -  Update Data Class <br>
-   ![Update Data Class](/day8/3-editClass.png) <br>
+   ![Update Data Class](/Day-8/3-editClass.png) <br>
 -  Delete Class <br>
-   ![Delete Class](/day8/3-deleteClass.png) <br>
+   ![Delete Class](/Day-8/3-deleteClass.png) <br>
